@@ -1,0 +1,30 @@
+{
+  "name": "mini-vue3",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/mini-vue3.cjs.js",
+  "module": "lib/mini-vue3.esm.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "build:type": "tsc -p ./tsconfig.type.json",
+    "test": "ts-node test/main.ts",
+    "cz": "git cz"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "rollup": "^2.53.1",
+    "rollup-plugin-typescript": "^1.0.1",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
