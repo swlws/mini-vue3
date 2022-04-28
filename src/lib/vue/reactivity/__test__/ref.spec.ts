@@ -2,8 +2,8 @@ import { describe, it, expect, test } from "vitest";
 
 import { effect, ref } from "../index";
 
-describe("响应式 Ref", () => {
-  test("基本数据类型", () => {
+describe("reactivity/ref", () => {
+  test("basic data type", () => {
     const val = ref(0);
 
     let v;
@@ -15,7 +15,7 @@ describe("响应式 Ref", () => {
     expect(v).toBe(1);
   });
 
-  test("引用数据类型", () => {
+  test("reference data type", () => {
     const obj = ref({ num: 0 });
 
     let v;
